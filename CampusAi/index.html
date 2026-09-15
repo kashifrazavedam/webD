@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusAI - Your Campus Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>🤖</span>
+            CampusAI
+        </div>
+
+        <nav>
+            <button onclick="showPage('dashboard')">🏠 Dashboard</button>
+            <button onclick="showPage('chat')">💬 AI Chat</button>
+            <button onclick="showPage('notice')">📄 Notice Scanner</button>
+            <button onclick="showPage('clubs')">🎯 Clubs</button>
+            <button onclick="showPage('campus')">📍 Campus Search</button>
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="page active">
+
+            <div class="hero">
+                <h1>Welcome to CampusAI 👋</h1>
+
+                <p>
+                    Your intelligent campus companion.
+                    Ask questions, discover events and understand college notices.
+                </p>
+
+                <button class="primary-btn"
+                        onclick="showPage('chat')">
+                    Ask CampusAI →
+                </button>
+            </div>
+
+
+            <h2>Today's Campus</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <span class="icon">📢</span>
+                    <h3>Announcements</h3>
+                    <p>3 new announcements today</p>
+                </div>
+
+                <div class="card">
+                    <span class="icon">📅</span>
+                    <h3>Events</h3>
+                    <p>Hackathon happening today</p>
+                </div>
+
+                <div class="card">
+                    <span class="icon">⏰</span>
+                    <h3>Deadlines</h3>
+                    <p>2 upcoming deadlines</p>
+                </div>
+
+                <div class="card">
+                    <span class="icon">🎯</span>
+                    <h3>Clubs</h3>
+                    <p>12 clubs available</p>
+                </div>
+
+            </div>
+
+
+            <div class="quick">
+
+                <h2>Quick Actions</h2>
+
+                <button onclick="showPage('chat')">
+                    💬 Ask AI
+                </button>
+
+                <button onclick="showPage('notice')">
+                    📄 Scan Notice
+                </button>
+
+                <button onclick="showPage('clubs')">
+                    🎯 Find a Club
+                </button>
+
+                <button onclick="showPage('campus')">
+                    📍 Find Location
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI CHAT -->
+        <section id="chat" class="page">
+
+            <h1>🤖 CampusAI Chat</h1>
+
+            <p class="subtitle">
+                Ask anything about your college.
+            </p>
+
+            <div class="chat-container">
+
+                <div id="chatMessages" class="chat-messages">
+
+                    <div class="message ai">
+                        👋 Hi! I'm CampusAI. How can I help you?
+                    </div>
+
+                </div>
+
+
+                <div class="suggestions">
+
+                    <button onclick="askQuestion('Where is today’s hackathon?')">
+                        📍 Where is today's hackathon?
+                    </button>
+
+                    <button onclick="askQuestion('What clubs can I join?')">
+                        🎯 What clubs can I join?
+                    </button>
+
+                    <button onclick="askQuestion('What events are happening today?')">
+                        📅 Today's events
+                    </button>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask CampusAI..."
+                        onkeydown="handleEnter(event)"
+                    >
+
+                    <button onclick="sendMessage()">
+                        Send
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOTICE SCANNER -->
+        <section id="notice" class="page">
+
+            <h1>📄 AI Notice Scanner</h1>
+
+            <p class="subtitle">
+                Upload a college notice and CampusAI will summarize it.
+            </p>
+
+            <div class="upload-box">
+
+                <div class="upload-icon">📄</div>
+
+                <h2>Upload College Notice</h2>
+
+                <p>
+                    Upload an image or PDF of your notice.
+                </p>
+
+                <input
+                    type="file"
+                    id="noticeFile"
+                    accept="image/*,.pdf"
+                >
+
+                <button class="primary-btn"
+                        onclick="scanNotice()">
+                    Analyze Notice
+                </button>
+
+            </div>
+
+
+            <div id="noticeResult" class="notice-result">
+
+                <h2>AI Summary</h2>
+
+                <div class="notice-info">
+
+                    <p><strong>Title:</strong>
+                        <span id="noticeTitle">-</span>
+                    </p>
+
+                    <p><strong>Date:</strong>
+                        <span id="noticeDate">-</span>
+                    </p>
+
+                    <p><strong>Time:</strong>
+                        <span id="noticeTime">-</span>
+                    </p>
+
+                    <p><strong>Location:</strong>
+                        <span id="noticeLocation">-</span>
+                    </p>
+
+                    <p><strong>Deadline:</strong>
+                        <span id="noticeDeadline">-</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLUBS -->
+        <section id="clubs" class="page">
+
+            <h1>🎯 Find Your Club</h1>
+
+            <p class="subtitle">
+                Select your interests and CampusAI will recommend clubs.
+            </p>
+
+
+            <div class="interests">
+
+                <button onclick="selectInterest(this)">
+                    💻 Coding
+                </button>
+
+                <button onclick="selectInterest(this)">
+                    🤖 AI
+                </button>
+
+                <button onclick="selectInterest(this)">
+                    🚀 Entrepreneurship
+                </button>
+
+                <button onclick="selectInterest(this)">
+                    ⚽ Sports
+                </button>
+
+                <button onclick="selectInterest(this)">
+                    🎨 Design
+                </button>
+
+                <button onclick="selectInterest(this)">
+                    🎵 Music
+                </button>
+
+            </div>
+
+
+            <button class="primary-btn"
+                    onclick="recommendClub()">
+                Recommend Clubs
+            </button>
+
+
+            <div id="clubResult"></div>
+
+        </section>
+
+
+        <!-- CAMPUS SEARCH -->
+        <section id="campus" class="page">
+
+            <h1>📍 Campus Search</h1>
+
+            <p class="subtitle">
+                Find important places on campus.
+            </p>
+
+
+            <input
+                class="search"
+                type="text"
+                id="locationSearch"
+                placeholder="Search library, lab, cafeteria..."
+                onkeyup="searchLocation()"
+            >
+
+
+            <div id="locations" class="location-list">
+
+                <div class="location">
+                    <h3>📚 Library</h3>
+                    <p>Ground Floor, Academic Block</p>
+                </div>
+
+                <div class="location">
+                    <h3>💻 Computer Lab</h3>
+                    <p>2nd Floor, Technology Block</p>
+                </div>
+
+                <div class="location">
+                    <h3>🍴 Cafeteria</h3>
+                    <p>Near Main Entrance</p>
+                </div>
+
+                <div class="location">
+                    <h3>🏟️ Sports Ground</h3>
+                    <p>Behind the Main Building</p>
+                </div>
+
+                <div class="location">
+                    <h3>🎤 Auditorium</h3>
+                    <p>Central Campus</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#parent{
+    background-color: bisque;
+    width: 500px;
+    height: 500px;
+}
+#child1{
+    background-color: white;
+    width: 70%;
+    height: 70%;
+}
+#child2{
+    background-color: red;
+    width:70%;
+    height: 70%;
+}
+#child3{
+    height: 70%;
+    width: 70%;
+}

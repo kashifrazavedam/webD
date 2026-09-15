@@ -1,0 +1,17 @@
+#parent{
+    height: 300px;
+    width: 250px;
+    margin: 10px auto;
+    border: 2px solid ;
+    border-radius: 20px;
+
+}
+#child1{
+    height: 50%;
+    width: 100%;
+    
+}
+img{
+    height: 50%;
+    width: 100%;
+}

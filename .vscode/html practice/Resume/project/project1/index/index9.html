@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 150px;
+            width: 150px;
+            display: flex;
+        }
+        #child1{
+            height: 30px;
+            width: 150px;
+            background-color: red;
+        }
+        #child21{
+            height: 55px;
+            width: 60px;
+            background-color: rgb(42, 191, 94);
+        }
+        #child22{
+            height: 30px;
+            width: 60px;
+            background-color: rgb(123, 53, 138);
+        }
+        #child3{
+            height: 120px;
+            width: 60px;
+            background-color: rgb(80, 179, 241);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1"></div>
+        <div id="child2">
+            <div id="child21"></div>
+            <div id="child22"></div>
+        </div>
+        <div id="child3"></div>
+    </div>
+</body>
+</html>

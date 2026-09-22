@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent{
+            display: flex;
+        }
+        #parent1{
+            display: flex;
+            flex-wrap: wrap;
+            height: 400px;
+            width: 450px;
+            padding: 2%;
+            align-items: center;
+            justify-content: center;
+            border: 1px dotted black;
+        }
+        #child1{
+            background-color: rgb(110, 14, 14);
+            width: 100%;
+            height: 20%;
+            margin: 1%;
+        }
+        child21{
+            background-color: rgb(4, 80, 19);
+            width: 50%;
+            height: 80%;
+            margin: 1.5%;
+        }
+        #child22{
+            background-color: rgb(103, 3, 93);
+            width: 45%;
+            height: 80%;
+            margin: 1.5%;
+        }
+        #child3{
+            background-color: rgb(252, 54, 54);
+            width: 100%;
+            height: 80%;
+            margin: 1.5%;
+        }
+        #child1ofparent2{
+            background-color: rgb(252, 54, 54);
+            width: 100%;
+            height: 80%;
+            margin: 1.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grandparent">
+        <div id="parent1">
+            <div id="child1">
+
+            </div>
+            <div id="child2">
+                <div id="child21">
+
+                </div>
+                <div id="child22">
+
+                </div>
+            </div>
+            <div id="child3">
+
+            </div>
+        </div>
+        <div id="parent2">
+            <div id="child1ofparent2">
+                <div id="child1ofparent21">
+
+                </div>
+                <div id="child1ofparent22">
+
+                </div>
+                <div id="child1ofparent23">
+
+                </div>
+            </div>
+            <div id="child2ofparent2">
+                <div id="child2ofparent21">
+
+                </div>
+                <div id="child2ofparent22">
+
+                </div>
+                <div id="child2ofparent23">
+
+                </div>
+            </div>
+            <div id="child3ofparent2"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 500px;
+            width: 100%;
+            border: 2px solid;
+            background-color: rgb(21, 20, 11);
+        }
+        .one{
+            height: 100px;
+            width: 100px;
+            transition: 3s;
+            
+        }
+        #one{
+            background-color: pink;
+            /* transition-timing-function: linear; */
+          
+        }
+        #two{
+            background-color: rgb(28, 93, 4);
+            transition-timing-function: ease-in;
+        }
+        #three{
+            background-color: rgb(128, 7, 27);
+            transition-timing-function: ease-out;
+        }
+        #four{
+            background-color: rgb(58, 4, 54);
+            transition-timing-function: ease-in-out;
+        }
+        #five{
+            background-color: rgb(15, 2, 4);
+            transition-timing-function: step-end;
+        }
+        #main:hover .one{
+            margin-left: 1355px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="one" class="one"></div>
+        <div id="two" class="one"></div>
+        <div id="three" class="one"></div>
+        <div id="four" class="one"></div>
+        <div id="five" class="one"></div>
+    </div>
+</body>
+</html>

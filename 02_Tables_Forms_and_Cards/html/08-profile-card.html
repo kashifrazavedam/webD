@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .profile_card{
+            width: 300px;
+            border-radius: 15px;
+            position: relative;
+            border: 2px solid black;
+            margin: 40px auto;
+            
+
+        }
+        h2{
+            text-align: center;
+        }
+        #role{
+            text-align: center;
+        }
+        .avl{
+            border-radius: 15px;
+            background-color: green;
+            position: absolute;
+            color: white;
+            top: 5px;
+            right: 10px;
+            padding: 5px;
+
+        }
+        .image_profile{
+            border-radius: 50%;
+            margin-top: 50px;
+            margin-left: 90px;
+        }
+        .image_profile img{
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+
+        }
+        p{
+            text-align: center;
+
+        }
+        .skills{
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+
+        }
+        .skills span{
+            border-radius: 15px;
+            display: inline-block;
+            border: 1px solid black;
+            padding: 5px 10px;
+            
+
+
+        }
+        #one{
+            background-color: palegreen;
+        }
+        #two{
+            background-color: rgb(28, 183, 142);
+        }
+        #three{
+            background-color: palegreen;
+        }
+        button{
+            background-color: rgb(16, 15, 15);
+            border-radius: 8px;
+            color: white;
+            margin: 5px;
+            margin-left: 94px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile_card">
+        <span class="avl">Available</span>
+        <div class="image_profile">
+            <img src="../assets/imageprofile.jpeg" alt="">
+        </div>
+        <h2>Kashif Raza</h2>
+        <p id="role">Frontend Developer</p>
+        <p>I create responsive website using html css and js i love building clean and user friendly interfaces.
+
+        </p>
+        <div class="skills">
+            <span id="one">HTML</span>
+            <span id="two">CSS</span>
+            <span id="three">Java Script</span>
+        </div>
+        <br>
+        <button>view Profile</button>
+    </div>
+</body>
+</html>

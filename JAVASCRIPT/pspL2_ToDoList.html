@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(37, 71, 71);
+        }
+       #parent{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        text-align: center;
+       }
+       #form{
+        width: 30%;
+        height: 20%;
+        background-color: rgb(154, 225, 225);
+        position: absolute;
+        top: 320px;
+        left: 480px;
+        border-radius: 12px;
+       }
+       input{
+        padding: 5px 10px;
+       }
+       button{
+        border-radius: 6px;
+        background-color: rgb(122, 122, 240);
+        padding: 5px 10px;
+       }
+    </style>
+</head>
+
+<body>
+   <div id="parent">
+        <form id="form" action="">
+            <h2>My-ToDo-List</h2>
+            <input type="text" id="taskInput">
+            <button id="addBtn">Add Task</button>
+            <button id="deleteBtn">Add Task</button>
+            <ul id="taskList"></ul>
+        </form>
+   </div>
+   <script src="pspL2_ToDoList.js"></script>
+</body>
+
+</html>

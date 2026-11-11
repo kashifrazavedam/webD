@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Rover</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #one nav {
+            height: 80px;
+            background-color: rgb(11, 9, 9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #one nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #two {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 16px;
+            padding: 0 16px;
+        }
+
+        #two a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #rangerover {
+            font-weight: bold;
+        }
+
+        #three img,
+        #four img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #three img {
+            height: 700px;
+        }
+
+        #four img {
+            height: 600px;
+        }
+
+        @media (max-width: 600px) {
+            #two {
+                flex-wrap: wrap;
+                padding: 16px;
+            }
+
+            #three img {
+                height: 400px;
+            }
+
+            #four img {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="one">
+            <nav>
+                <a href="#">Find your Range Rover. Search in-stock vehicles</a>
+            </nav>
+        </div>
+
+        <div id="two">
+            <a href="#">VEHICLES</a>
+            <a href="#">OWNERS</a>
+            <a href="#" id="rangerover">RANGE ROVER</a>
+            <a href="#">EXPLORE</a>
+            <a href="#">SHOP NOW</a>
+        </div>
+
+        <div id="three">
+            <img src="./rangerover.avif" alt="Range Rover">
+        </div>
+
+        <div id="four">
+            <img src="./rangerover2.avif" alt="Range Rover">
+        </div>
+    </div>
+</body>
+</html>

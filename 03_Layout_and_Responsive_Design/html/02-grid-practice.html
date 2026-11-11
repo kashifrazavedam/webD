@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: aliceblue;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            /* background-color: black; */
+        }
+        #main{
+            margin: 20px 90px;
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+            /* background-color: black; */
+            gap: 20px;
+
+        }
+        #main div{
+            height: 100%;
+            width: 100%;
+            border: 2px solid red;
+            border-radius: 10px;
+
+        }
+        #one{
+            background-image: linear-gradient(red,blue);
+        }
+        #two{
+            background: linear-gradient(
+                to right,
+                red 50%,
+                blue 50%
+            );
+        }
+        #three{
+            background: radial-gradient(
+                red,
+                blue
+            );
+
+        }
+        #four{
+            background: repeating-conic-gradient(
+                red 0deg 20deg,
+                blue 20deg 40deg
+            );
+        }
+        #five{
+            background: repearing-linear-gradient(
+                90deg,
+                black 0px,
+                red 20px
+            );
+
+        }
+        #six{
+            background: repeating-linear-gradient(
+                45deg,
+                red 0px,
+                red 20px,
+                blue 20px,
+                blue 40px
+            );
+        }
+        #seven{
+            background: conic-gradient(
+                red,
+                blue,
+                yellow
+
+            );
+        }
+
+    </style>
+</head>
+<body>
+    <center><h2>CSS Gradient</h2></center>
+    <div id="main">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+        <div id="seven"></div>
+        <div id="eight"></div>
+        <div id="nine"></div>
+        <div id="ten"></div>
+    </div>
+</body>
+</html>

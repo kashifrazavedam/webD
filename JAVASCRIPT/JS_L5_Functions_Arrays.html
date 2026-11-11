@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5]
+        // arr.push(6)
+        // console.log(arr)
+        // arr.pop()
+        // console.log(arr);
+        arr.shift();
+        console.log(arr)
+        // arr.shift()
+        // console.log(arr)
+        // arr.unshift(9);
+        // console.log(arr);
+
+        // let kashif=[[1,2],[3,4],[5,6],[7,8]]
+      
+
+        // kashif.push([1,2])
+        // console.log(kashif)
+
+
+        
+        // function sum(a,b){
+        //     console.log(a*b)
+        //     console.log(a+b)
+        //     console.log(a/b)
+        // }
+        // sum(2,3)
+
+
+        function sum(target){
+            let arr=[1,2,3,4,5,4,4]
+            for(let i=0;i<arr.length;i++){
+                if(arr[i]==target){
+                    console.log(i);
+                }
+            }
+
+        }
+        sum(4);
+
+
+        function print(n){
+            for(let i=1;i<=n;i++){
+                let star=''
+                for(let j=1;j<=i;j++){
+                    star=star+"8"
+                }
+                console.log(star)
+            }
+        }
+        print(7);
+
+
+        function printStar(k){
+            for(let i=1;i<=k;i++){
+                let star=""
+                for(let j=1;j<=i;j++){
+                    star=star+"*"
+                }
+                console.log(star)
+            }
+        }
+        printStar(5)
+
+
+        var print=(n)=>{
+            console.log("hii"+n)
+        }
+        print(5)
+
+        var target=()=>{
+            console.log("target")
+        }
+        target()
+//     </script>
+// </body>
+// </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img height="400px" src="" alt="">
+    <input id="one">
+    <h6></h6>
+    <button>Click me</button>
+
+    <script>
+        // let inp = document.querySelector("#one");
+        // let h6 = document.querySelector("h6");
+        // let btn = document.querySelector("button");
+
+        // btn.addEventListener("click", function () {
+        //     h6.innerText = inp.value;
+        //     inp.value = "";
+        // });
+
+
+
+        // btn.addEventListener("click",function(){
+        //     h6.innerText=inp.value
+        //     inp.value=""
+        // })
+
+        let arr = [
+            "https://plus.unsplash.com/premium_photo-1792775490136-d4493a7643b2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+            "https://plus.unsplash.com/premium_photo-1789508456983-dafebae8d95a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+            "https://images.unsplash.com/photo-1793165591665-6e63e3a7fd29?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+        ];
+
+        let img = document.querySelector("img");
+        let n = 0;
+
+        setInterval(() => {
+            img.setAttribute("src", arr[n])
+            n = (n + 1) % arr.length
+        }, 500)
+
+    </script>
+</body>
+
+</html>

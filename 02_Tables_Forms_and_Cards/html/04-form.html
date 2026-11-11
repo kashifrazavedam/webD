@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop Registration</title>
+  <style>
+    /* Reset and base */
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      background: #eef2f7;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #1c2733;
+    }
+
+    /* The form card */
+    form {
+      width: 100%;
+      max-width: 440px;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(28, 39, 51, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 1.6rem;
+    }
+
+    .subtitle {
+      margin: 0 0 24px;
+      color: #5b6b7b;
+    }
+
+    /* Each label + input pair */
+    .field {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      font: inherit;
+      border: 1.5px solid #c9d3de;
+      border-radius: 8px;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    /* Visible focus state */
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #2f6fed;
+      box-shadow: 0 0 0 3px rgba(47, 111, 237, 0.2);
+    }
+
+    /* Radio buttons and checkbox rows */
+    .options {
+      display: flex;
+      gap: 20px;
+    }
+
+    .options label,
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    /* Submit button */
+    button {
+      width: 100%;
+      padding: 12px;
+      font: inherit;
+      font-weight: 600;
+      color: #fff;
+      background: #2f6fed;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover { background: #1f57c7; }
+    button:focus-visible { outline: 3px solid rgba(47, 111, 237, 0.4); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post">
+    <h1>Register for the workshop</h1>
+    <p class="subtitle">Fill in your details to reserve a seat.</p>
+
+    <div class="field">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" minlength="8" placeholder="At least 8 characters" required>
+    </div>
+
+    <div class="field">
+      <label>Year of study</label>
+      <div class="options">
+        <label><input type="radio" name="year" value="1" checked> 1st</label>
+        <label><input type="radio" name="year" value="2"> 2nd</label>
+        <label><input type="radio" name="year" value="3"> 3rd</label>
+        <label><input type="radio" name="year" value="4"> 4th</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="track">Workshop track</label>
+      <select id="track" name="track" required>
+        <option value="">Choose a track</option>
+        <option value="web">Web development</option>
+        <option value="ai">AI and machine learning</option>
+        <option value="backend">Backend and APIs</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="message">Anything we should know?</label>
+      <textarea id="message" name="message" placeholder="Questions or special requirements"></textarea>
+    </div>
+
+    <div class="field">
+      <label class="check">
+        <input type="checkbox" name="terms" required>
+        I agree to the workshop rules
+      </label>
+    </div>
+
+    <button type="submit">Reserve my seat</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            margin: 100px auto;
+            width: 90%;
+            border: 5px solid rgb(15,1,1);
+            display: flex;
+            overflow: hidden;
+
+        }
+        .group{
+            display: flex;
+            animation: scroll 2s linear infinite;
+        }
+        .track{
+            display: flex;
+            animation: scroll 2s linear infinite;
+            width: max-content;
+        }
+        .group div{
+            width: 250px;
+            height: 30vh;
+            padding: 2vh;
+            background-color: aqua;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid rgb(240, 246, 246 );
+        }
+        .track div{
+            width: 250px;
+            height: 30vh;
+            padding: 2vh;
+            background-color: aqua;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid rgb(240, 246, 246 );
+        }
+        
+        
+        @keyframes scroll{
+            from{
+                transform: translateX(0);
+
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+      <div class="track">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+      <div class="group">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+    </div>
+</body>
+</html>

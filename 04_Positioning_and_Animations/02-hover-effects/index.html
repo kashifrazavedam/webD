@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        body {
+            perspective: 900px;
+            background-color: rgb(236, 229, 229);
+        }
+
+        #main {
+            height: 600px;
+            width: 300px;
+            margin: 50px auto;
+            position: relative;
+            transition: 3s;
+            transform-style: preserve-3d;
+
+
+        }
+
+        #main:hover {
+            transform: rotateY(180deg);
+        }
+
+        #card_one {
+            background-color: rgb(18, 149, 59);
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            z-index: 1;
+        }
+
+        #card_two {
+            background-color: rgb(26, 47, 123);
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            transform: rotateY(180deg);
+
+
+        }
+
+        div {
+            color: snow;
+        }
+        img{
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        
+        <div id="card_one"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZShb6srri8_1O_5dZHmVFKN87_Fok2PPIi215KQUeAtc_DrbnwRDShk&s=10"
+            alt="">
+        </div>
+        <div id="card_two">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCMvC831qRKoCCsi4MqHyfAC_h4KkoFlvU9JTJWXVyCNcCsGqN0qD60J2&s=10" alt="">
+        </div>
+    </div>
+    
+</body>
+
+</html>

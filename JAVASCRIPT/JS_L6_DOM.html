@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="one" class="two">hello</h2>
+    <h2 id="one" class="two">jahdk</h2>
+    <h2 id="one" class="two">jahdk</h2>
+    <h2 id="one" class="two">jahdk</h2>
+    <h2 id="one" class="two">jahdk</h2>
+
+
+    <button>click me</button>
+    <script>
+        // let btn=document.querySelector("button")
+        // let body=document.querySelector("body")
+        // let a=true
+        // btn.onclick=function(){
+        //     if(a){
+        //         body.style.backgroundColor='red'
+        //         a=false;
+        //     }
+        //     else{
+        //         body.style.backgroundColor='green'
+        //         a=true;
+        //     }
+        // }
+
+        // let h2=document.querySelector('.two')
+        // h2.style.color='red'
+        // h2.style.color='yellow'
+
+
+        // let h2=document.querySelectorAll("h2")
+        // for(let i of h2){
+        //     i.style.color='purple'
+        // }
+
+        //   let h2=document.querySelector('#one')
+        // h2.style.color='red'
+        // h2.style.color='yellow'
+
+        
+        // h2.style.color='green'
+        // let h2=document.getElementById("one")
+        // h2.style.color='red'
+        // h2.innerText="sdjkcbhdls"
+
+        // console.log(h2);
+
+        let h2=document.getElementsByClassName("two")
+        for(let i of h2){
+            i.style.color='green'
+        }
+        h2[1].style.color='red'
+        h2[0].style.color='blue'
+        h2[4].style.color='yellow'
+
+    </script>
+</body>
+</html>

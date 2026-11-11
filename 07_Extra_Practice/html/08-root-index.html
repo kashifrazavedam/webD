@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent{
+            display: flex;
+        }
+        #parent {
+            flex-wrap: wrap;
+            display: flex;
+            height: 400px;
+            width: 450px;
+            border: 1px dotted black;
+            padding: 2%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #child1 {
+            width: 100%;
+            height: 20%;
+            background-color: brown;
+            margin: 1%;
+
+        }
+
+        #child2 {
+            width: 50%;
+            height: 80%;
+            /* background-color: chartreuse; */
+            margin: 1.5%;
+
+        }
+
+        #child3 {
+            width: 45%;
+            height: 80%;
+            background-color: indianred;
+            margin: 1%;
+
+
+        }
+
+        #child11 {
+            width: 100%;
+            height: 80%;
+            background-color: forestgreen;
+            margin: 1%;
+
+
+        }
+
+        #child12 {
+            width: 100%;
+            height: 20%;
+            background-color: palevioletred;
+            margin: 1%;
+        }
+
+        #parent2 {
+            flex-wrap: wrap;
+            display: flex;
+            height: 400px;
+            width: 450px;
+            border: 1px dotted black;
+            padding: 2%;
+            align-items: center;
+            justify-content: center;
+        }
+        #child21{
+            height: 75%;
+            width: 45%;
+            margin: 1%;
+        }
+        #child22{
+            height: 75%;
+            width: 45%;
+            margin: 1%;
+
+        }
+        #child23{
+            height: 20%;
+            width: 90%;
+            background-color: coral;
+            padding: 0.5%;
+
+        }
+        #child211{
+            width: 100%;
+            height: 20%;
+            background-color: blueviolet;
+            margin: 1%;
+
+        }
+        #child212{
+            width: 100%;
+            height: 35%;
+            background-color: rgb(43, 226, 177);
+            margin: 1%;
+
+        }
+         #child213{
+            width: 100%;
+            height: 45%;
+            background-color: rgb(226, 156, 43);
+            margin: 1%;
+
+        }
+        #child221{
+            width: 100%;
+            height: 45%;
+            background-color: rgb(28, 26, 91);
+            margin: 1%;
+
+        }
+        #child222{
+            width: 100%;
+            height: 35%;
+            background-color: rgb(28, 228, 208);
+            margin: 1%;
+
+        }
+        #child223{
+            width: 100%;
+            height: 20%;
+            background-color: rgb(205, 24, 190);
+            margin: 1%;
+
+        }
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child1">
+
+            </div>
+            <div id="child2">
+                <div id="child11">
+
+                </div>
+                <div id="child12">
+
+                </div>
+            </div>
+            <div id="child3">
+
+            </div>
+        </div>
+
+        <div id="parent2">
+            <div id="child21">
+                <div id="child211">
+
+                </div>
+                <div id="child212">
+
+                </div>
+                <div id="child213">
+
+                </div>
+            </div>
+            <div id="child22">
+                <div id="child221">
+
+                </div>
+                <div id="child222">
+
+                </div>
+                <div id="child223">
+
+                </div>
+            </div>
+            <div id="child23">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

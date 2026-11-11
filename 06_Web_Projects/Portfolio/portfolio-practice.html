@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: rgb(30, 84, 30); */
+        }
+        header{
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        nav{
+            display: flex;
+            gap: 50px;
+        }
+        nav a{
+            color: black;
+        }
+        #one{
+            height: 250px;
+            width: 500px;
+            padding-left: 75px;
+            padding-top: 50px;
+        }
+        #one button{
+            background-color: black;
+            color: white;
+            border-radius: 30%;
+        }
+        #parent{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 50px;
+        }
+        #two{
+            height: 400px;
+            width: 400px;
+            background-color: orangered;
+            /* border-radius: 30% 40% 50% 60%; */
+            display: flex;
+            justify-content: right;
+            animation: circle;
+        }
+        @keyframes circle{
+            from{
+                border-radius: 100%;
+            }
+            to{
+                border-radius: 50%;
+            }
+        }
+        #carousal{
+    width: 100vw;
+    background-color: black;
+    height: 80px;
+    overflow: hidden;
+
+
+}
+#move{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white; 
+    align-items: center;
+    animation: fah 10s linear infinite;
+
+}
+@keyframes fah {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+
+
+    }
+}
+#scroll{
+
+}
+.main{
+    height: 100vh;
+    height: 100vw;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#child1{
+    /* background-color: blue; */
+    width: 20%;
+    height: 100vh;
+
+
+}
+#child2{
+    width: 50%;
+    height: 100vh;
+    font-size: xx-large;
+    color: red;
+    /* background-color: green; */
+}
+#child3{
+    width: 30%;
+    height: 100vh;
+    /* background-color: red; */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">K_<span></span></a>
+        <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Work</a>
+        <a href="">Skills</a>
+        <a href="">Contact</a>
+        </nav>
+        <a href="">Lets talk</a>
+    </header>
+    <br>
+    <div id="parent">
+        <div id="one">
+            <h1>Creative</h1>
+            <h1>Frontend</h1>
+            <h1>Developer.</h1>
+            <p>I design and build clean, modern and engaging digital experiences for the web.</p>
+            <button>Explore My Work</button>
+            <button>Contact Me</button>
+        </div>
+        <div id="two"></div>
+    </div>
+    <div id="scroll">
+       <div id="scrolltwo">
+         <div>web development</div>
+        <div>Best Design</div>
+        <div>Responsive Design</div>
+        <div>web development</div>
+        <div>web development</div>
+        <div>web development</div>
+       </div>
+    </div>
+
+
+    <div class="main">
+        <div id="child1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum tempora modi id. Numquam, doloremque! Nobis animi nulla eius, dicta quia maiores excepturi, doloribus voluptatem, voluptates voluptas dolorem sint pariatur ratione!</div>
+        <div id="child2">
+            Turning ideas into beatiful Minds
+        </div>
+        <div id="child3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, velit culpa? Repudiandae quae quidem ipsum veniam, ipsam mollitia sint beatae expedita ut totam. Ab delectus illum cumque dolorem odio facere?</div>
+    </div>
+</body>
+</html>
